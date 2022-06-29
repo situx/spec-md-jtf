@@ -1,4 +1,20 @@
-# Markdown
+# JTF Format specification
+
+JTF is a JSON-based format to store and process textual cuneiform data and metadata
+
+## Format structure
+
+### Medium
+
+### Layout
+
+### 
+
+## Metadata
+
+## JTF as linked data: JTF-LD
+
+
 
 Spec Markdown is first and foremost [Markdown](http://daringfireball.net/projects/markdown/syntax).
 More specifically, it's based on [Github-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
