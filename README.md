@@ -5,6 +5,9 @@ writing technical specification documents. Markdown additions include code
 syntax highlighting, edit annotations, and the definition of algorithms and
 grammar productions.
 
+
+
+
 **Philosophy**
 
 Spec Markdown is first and foremost Markdown. As such, it follows Markdown's
