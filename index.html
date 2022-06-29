@@ -16,11 +16,11 @@
 <section id="intro">
 <p data-source="README.md#L3-L6">Renders Markdown with some additions into an HTML format commonly used for writing technical specification documents. Markdown additions include code syntax highlighting, edit annotations, and the definition of algorithms and grammar productions.</p>
 <section id="sec-Philosophy" class="subsec">
-<h6 data-source="README.md#L8"><a href="#sec-Philosophy" title="link to this subsection">Philosophy</a></h6>
-<p data-source="README.md#L10-L11">Spec Markdown is first and foremost Markdown. As such, it follows Markdown&rsquo;s philosophy of intending to be as easy to read and easy to write as is feasible.</p>
-<p data-source="README.md#L13-L16">In order to interoperate with other tools which use Markdown, Spec Markdown tries to add as little additional syntax as possible, instead preferring conventions. This means any documents written with Spec Markdown in mind should render adequately by other Markdown renderers.</p>
-<p data-source="README.md#L18-L20">To support the rendering additions of Spec Markdown, some features of Markdown may be limited or removed. As an example, Spec Markdown is strict about the order and locations of headers in a document.</p>
-<div id="note-c32a7" class="spec-note" data-source="README.md#L22-L23">
+<h6 data-source="README.md#L11"><a href="#sec-Philosophy" title="link to this subsection">Philosophy</a></h6>
+<p data-source="README.md#L13-L14">Spec Markdown is first and foremost Markdown. As such, it follows Markdown&rsquo;s philosophy of intending to be as easy to read and easy to write as is feasible.</p>
+<p data-source="README.md#L16-L19">In order to interoperate with other tools which use Markdown, Spec Markdown tries to add as little additional syntax as possible, instead preferring conventions. This means any documents written with Spec Markdown in mind should render adequately by other Markdown renderers.</p>
+<p data-source="README.md#L21-L23">To support the rendering additions of Spec Markdown, some features of Markdown may be limited or removed. As an example, Spec Markdown is strict about the order and locations of headers in a document.</p>
+<div id="note-c32a7" class="spec-note" data-source="README.md#L25-L26">
 <a href="#note-c32a7">Note</a>
 This is not a normative spec for Spec Markdown, but just documentation of this tool. Of course, written in Spec Markdown!</div>
 </section>
@@ -133,22 +133,22 @@ This is not a normative spec for Spec Markdown, but just documentation of this t
 </nav>
 </header>
 <section id="sec-Getting-Started" secid="1">
-<h1 data-source="README.md#L26"><span class="spec-secid" title="link to this section"><a href="#sec-Getting-Started">1</a></span>Getting Started</h1>
-<p data-source="README.md#L28-L29">To use Spec Markdown, just write Markdown files. There are some conventions used by Spec Markdown which you can read about in <a href="#sec-Spec-Additions">Spec additions</a>.</p>
-<p data-source="README.md#L31-L32">To convert your Markdown files into an HTML spec document, use the <code>spec-md</code> utility.</p>
-<pre data-language="sh" data-source="README.md#L34-L37"><code>npm install -g spec-md
+<h1 data-source="README.md#L29"><span class="spec-secid" title="link to this section"><a href="#sec-Getting-Started">1</a></span>Getting Started</h1>
+<p data-source="README.md#L31-L32">To use Spec Markdown, just write Markdown files. There are some conventions used by Spec Markdown which you can read about in <a href="#sec-Spec-Additions">Spec additions</a>.</p>
+<p data-source="README.md#L34-L35">To convert your Markdown files into an HTML spec document, use the <code>spec-md</code> utility.</p>
+<pre data-language="sh" data-source="README.md#L37-L40"><code>npm install -g spec-md
 spec-md ./path/to/markdown.md &gt; ./path/to/output.html
 </code></pre>
-<p data-source="README.md#L39">You can also require <code>spec-md</code> as a node module.</p>
-<pre data-language="sh" data-source="README.md#L41-L43"><code>npm install --save-dev spec-md
+<p data-source="README.md#L42">You can also require <code>spec-md</code> as a node module.</p>
+<pre data-language="sh" data-source="README.md#L44-L46"><code>npm install --save-dev spec-md
 </code></pre>
-<pre data-language="js" data-source="README.md#L45-L51"><code><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre data-language="js" data-source="README.md#L48-L54"><code><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> specMarkdown <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'spec-md'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 specMarkdown<span class="token punctuation">.</span><span class="token method function property-access">html</span><span class="token punctuation">(</span><span class="token string">'./path/to/markdown.md'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token parameter">html</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
   fs<span class="token punctuation">.</span><span class="token method function property-access">writeFile</span><span class="token punctuation">(</span><span class="token string">'./path/to/output.html'</span><span class="token punctuation">,</span> html<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p data-source="README.md#L53-L55">Spec Markdown also provides utilities for generating and operating on an intermediate representation of the markdown, which you can explore in <a href="#sec-Using-Spec-Markdown">Using Spec Markdown</a>.</p>
+<p data-source="README.md#L56-L58">Spec Markdown also provides utilities for generating and operating on an intermediate representation of the markdown, which you can explore in <a href="#sec-Using-Spec-Markdown">Using Spec Markdown</a>.</p>
 </section>
 <section id="sec-Markdown" secid="2">
 <h1 data-source="spec/Markdown.md#L1"><span class="spec-secid" title="link to this section"><a href="#sec-Markdown">2</a></span>Markdown</h1>
