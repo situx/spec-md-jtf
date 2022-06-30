@@ -4,11 +4,19 @@ JTF is a JSON-based format to store and process textual cuneiform data and metad
 
 ## Format structure
 
+This section describes the structure of a JTF document. JTF is a hierarchical representation of the contents of a cuneiform artifact.
+
 ### Medium
+
+JTF includes predefined classifications of cuneiform artifact types.
+
+* Cuneiform tablet: *tablet*
 
 ### Layout
 
 ## Metadata
+Metadata associated with a cuneiform artifacts is 
+
 
 ## JTF as linked data: JTF-LD
 
