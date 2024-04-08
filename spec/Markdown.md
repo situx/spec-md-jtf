@@ -47,7 +47,7 @@ Tablet
 : An artifact in the shape of a tablet with one or many impressions
 
 Envelope
-: An artifact in the shape of an envelope that may encompass another cuneiform artifact, e.g. a tablet
+: An artifact in the shape of an envelope that may encompass another cuneiform artifact, e.g., a tablet
 
 ### Layout
 
