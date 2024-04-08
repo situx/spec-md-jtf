@@ -85,10 +85,14 @@ Reverse
 ## Metadata
 Metadata associated with cuneiform artifacts may include:
 
-* Width of the cuneiform tablet
-* Height of the cuneiform tablet
-* Depth of the cuneiform tablet
+Width
+: Width of the cuneiform tablet
 
+Height
+: Height of the cuneiform tablet
+
+Depth
+: Depth of the cuneiform tablet
 
 ## JTF as linked data: JTF-LD
 
