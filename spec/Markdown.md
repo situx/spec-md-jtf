@@ -38,12 +38,16 @@ The contents JTF-LD can describe are introduced in the following sections.
 
 ### Medium
 
-JTF includes predefined classifications of cuneiform artefact types. This section introduces the keywords used in JTF to describe the different types of cuneiform artefacts.
+JTF includes predefined classifications of cuneiform artefact types. This section introduces the keywords used in JTF to describe the different types of cuneiform artifacts.
 These types are consistent with types used in major cuneiform artifact repositories such as the [Cuneiform Digital Library Initiative (CDLI)](https://cdli.mpiwg-berlin.mpg.de) and [ORACC](https://oracc.museum.upenn.edu) 
 
-#### Cuneiform artefact types
-* Cuneiform tablet: *tablet*
-* 
+#### Cuneiform artifact types
+
+Tablet
+: An artifact in the shape of a tablet with one or many impressions
+
+Envelope
+: An artifact in the shape of an envelope that may encompass another cuneiform artifact, e.g. a tablet
 
 ### Layout
 
