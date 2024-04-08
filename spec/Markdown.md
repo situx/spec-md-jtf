@@ -1,17 +1,47 @@
-# JTF Format specification
+# JTF-LD Format specification
 
-JTF is a JSON-based format to store and process textual cuneiform tablet data and metadata about cuneiform artifacts.
+JTF-LD is a linked data-compatible JSON-based format for storing and processing textual cuneiform tablet data and metadata about cuneiform artifacts.
 This specification document describes the structure and usage of the JTF format and its relations to other formats describing cuneiform tablet contents.
+
+## Introduction
+
+JTF-LD is a format for encoding various features on cuneiform artifacts and linking elements found on said cuneiform tablets to existing data in the linked open data cloud.
+In doing so, JTF-LD defines a vocabulary for describing elements of a cuneiform tablet and can act as an exchange format between different databases providing cuneiform artifact data.
+This specification builds on work by Ilya Khait, who defined the format JTF as an alternative format to the format ATF, which is commonly used to describe transliterations of cuneiform tablets.
+
+### Requirements Language
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC2119]
+
+### Conventions Used in This Document
+
+The ordering of the members of any JSON object defined in this document MUST be considered irrelevant, as specified by [RFC7159].
+
+Some examples use the combination of a JavaScript single-line comment
+(//) followed by an ellipsis (...) as placeholder notation for
+content deemed irrelevant by the authors.  These placeholders must of
+course be deleted or otherwise replaced before attempting to
+validate the corresponding JSON code example.
+
+Whitespace is used in the examples inside this document to help
+illustrate the data structures, but it is not required.  Unquoted
+whitespace is not significant in JSON.
+
+### Definitions
+* JavaScript Object Notation (JSON), and the terms object, member, name, value, array, number, true, false, and null, are to be interpreted as defined in [RFC7159].
+* 
+
 
 ## Format structure
 
-This section describes the structure of a JTF document. JTF is a hierarchical representation of the contents of a cuneiform artifact.
+This section describes the structure of a JTF-LD document. JTF-LD is a hierarchical representation of the contents of a cuneiform artifact.
+The contents JTF-LD can describe are introduced in the following sections.
 
 ### Medium
 
-JTF includes predefined classifications of cuneiform artifact types. This section introduces the keywords used in JTF to describe the different cuneiform artifact types.
+JTF includes predefined classifications of cuneiform artefact types. This section introduces the keywords used in JTF to describe the different cuneiform artefact types.
+These type are consistent with types used in major cuneiform arte
 
-Cuneiform artifact types:
+Cuneiform artefact types:
 * Cuneiform tablet: *tablet*
 * 
 
