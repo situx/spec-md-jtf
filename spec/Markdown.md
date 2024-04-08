@@ -52,6 +52,32 @@ A cuneiform tablet may include
 * A set of surfaces (typically obverse, reverse, left, right, top, bottom)
 * A set of cuneiform sign inscriptions on each of the aforementioned surfaces
 
+#### Surfaces
+
+Surfaces of cuneiform artifacts commonly contain textual information, seal impressions, or other areas of interest that may need further detailed examination and description by scholars.
+This specification assumes that an agreement to classify surfaces on the cuneiform artifact has been reached before encoding in JTF-LD is attempted.
+In particular, this involves researchers' agreement concerning the orientation of the cuneiform tablet and, hence, the identification of its different surfaces.
+Therefore, the following definitions of surfaces are the results of scholarly work and may be applied to areas on the cuneiform tablet:
+
+Top
+: One or many surfaces located at the top of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
+
+Bottom
+: One or many surfaces located at the bottom of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
+
+Left
+: One or many surfaces located on the left side of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
+
+Right
+: One or many surfaces located on the right side of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
+
+Obverse
+: One or many surfaces located on the obverse or front side of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
+
+Reverse
+: One or many surfaces located on the obverse or back side of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
+
+
 ## Metadata
 Metadata associated with cuneiform artifacts may include:
 
