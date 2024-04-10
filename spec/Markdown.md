@@ -127,6 +127,3 @@ A line consists of several words in the order of their writing, usually from lef
 
 
 
-### Automatic Links
-
-Spec Markdown does not yet automatically link urls.
