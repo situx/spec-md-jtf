@@ -48,31 +48,10 @@ This is not a normative spec for Spec Markdown, but just documentation of this t
 </ol>
 </li>
 <li><a href="#sec-Metadata"><span class="spec-secid">2.3</span>Metadata</a></li>
-<li><a href="#sec-JTF-as-linked-data-JTF-LD"><span class="spec-secid">2.4</span>JTF as linked data: JTF-LD</a></li>
-<li><a href="#sec-Character-Encoding"><span class="spec-secid">2.5</span>Character Encoding</a><ol>
-<li><a href="#sec-Escape-sequence"><span class="spec-secid">2.5.1</span>Escape sequence</a></li>
-</ol>
-</li>
-<li><a href="#sec-Inline-formatting"><span class="spec-secid">2.6</span>Inline formatting</a><ol>
-<li><a href="#sec-Inline-HTML"><span class="spec-secid">2.6.1</span>Inline HTML</a></li>
-<li><a href="#sec-Links"><span class="spec-secid">2.6.2</span>Links</a></li>
-<li><a href="#sec-Emphasis"><span class="spec-secid">2.6.3</span>Emphasis</a></li>
-<li><a href="#sec-Inline-Code"><span class="spec-secid">2.6.4</span>Inline Code</a></li>
-<li><a href="#sec-Images"><span class="spec-secid">2.6.5</span>Images</a></li>
-</ol>
-</li>
-<li><a href="#sec-Blocks"><span class="spec-secid">2.7</span>Blocks</a><ol>
-<li><a href="#sec-Block-HTML"><span class="spec-secid">2.7.1</span>Block HTML</a></li>
-<li><a href="#sec-Blocks.Section-Headers"><span class="spec-secid">2.7.2</span>Section Headers</a></li>
-<li><a href="#sec-Paragraphs"><span class="spec-secid">2.7.3</span>Paragraphs</a></li>
-<li><a href="#sec-Lists"><span class="spec-secid">2.7.4</span>Lists</a><ol>
-<li><a href="#sec-Task-Lists"><span class="spec-secid">2.7.4.1</span>Task Lists</a></li>
-</ol>
-</li>
-<li><a href="#sec-Code-Block"><span class="spec-secid">2.7.5</span>Code Block</a></li>
-<li><a href="#sec-Block-Quotes"><span class="spec-secid">2.7.6</span>Block Quotes</a></li>
-<li><a href="#sec-Horizontal-Rules"><span class="spec-secid">2.7.7</span>Horizontal Rules</a></li>
-<li><a href="#sec-Automatic-Links"><span class="spec-secid">2.7.8</span>Automatic Links</a></li>
+<li><a href="#sec-Text-Content"><span class="spec-secid">2.4</span>Text Content</a></li>
+<li><a href="#sec-Annotations"><span class="spec-secid">2.5</span>Annotations</a></li>
+<li><a href="#sec-JTF-as-linked-data-JTF-LD"><span class="spec-secid">2.6</span>JTF as linked data: JTF-LD</a><ol>
+<li><a href="#sec-Automatic-Links"><span class="spec-secid">2.6.1</span>Automatic Links</a></li>
 </ol>
 </li>
 </ol>
@@ -81,7 +60,7 @@ This is not a normative spec for Spec Markdown, but just documentation of this t
 <li><a href="#sec-Link-Anything"><span class="spec-secid">3.1</span>Link Anything</a></li>
 <li><a href="#sec-Title-and-Introduction"><span class="spec-secid">3.2</span>Title and Introduction</a></li>
 <li><a href="#sec-Sections"><span class="spec-secid">3.3</span>Sections</a><ol>
-<li><a href="#sec-Sections.Section-Headers"><span class="spec-secid">3.3.1</span>Section Headers</a></li>
+<li><a href="#sec-Section-Headers"><span class="spec-secid">3.3.1</span>Section Headers</a></li>
 <li><a href="#sec-Subsection-Headers"><span class="spec-secid">3.3.2</span>Subsection Headers</a></li>
 <li><a href="#sec-Table-of-Contents"><span class="spec-secid">3.3.3</span>Table of Contents</a></li>
 <li><a href="#sec-Section-Numbers"><span class="spec-secid">3.3.4</span>Section Numbers</a><ol>
@@ -249,247 +228,49 @@ specMarkdown<span class="token punctuation">.</span><span class="token method fu
 </section>
 </section>
 <section id="sec-Metadata" secid="2.3">
-<h2 data-source="spec/Markdown.md#L85"><span class="spec-secid" title="link to this section"><a href="#sec-Metadata">2.3</a></span>Metadata</h2>
-<p data-source="spec/Markdown.md#L86">Metadata associated with cuneiform artifacts may include:</p>
+<h2 data-source="spec/Markdown.md#L84"><span class="spec-secid" title="link to this section"><a href="#sec-Metadata">2.3</a></span>Metadata</h2>
+<p data-source="spec/Markdown.md#L85">Metadata associated with cuneiform artifacts may include:</p>
 <dl>
-<dt data-source="spec/Markdown.md#L88-L89"><dfn id="width"><a href="#width" data-name="width">Width</a></dfn></dt>
-<dd data-source="spec/Markdown.md#L89">Width of the cuneiform tablet</dd>
+<dt data-source="spec/Markdown.md#L87-L88"><dfn id="width"><a href="#width" data-name="width">Width</a></dfn></dt>
+<dd data-source="spec/Markdown.md#L88">Width of the cuneiform artifact</dd>
 </dl>
 <dl>
-<dt data-source="spec/Markdown.md#L91-L92"><dfn id="height"><a href="#height" data-name="height">Height</a></dfn></dt>
-<dd data-source="spec/Markdown.md#L92">Height of the cuneiform tablet</dd>
+<dt data-source="spec/Markdown.md#L90-L91"><dfn id="height"><a href="#height" data-name="height">Height</a></dfn></dt>
+<dd data-source="spec/Markdown.md#L91">Height of the cuneiform artifact</dd>
 </dl>
 <dl>
-<dt data-source="spec/Markdown.md#L94-L95"><dfn id="depth"><a href="#depth" data-name="depth">Depth</a></dfn></dt>
-<dd data-source="spec/Markdown.md#L95">Depth of the cuneiform tablet</dd>
+<dt data-source="spec/Markdown.md#L93-L94"><dfn id="depth"><a href="#depth" data-name="depth">Depth</a></dfn></dt>
+<dd data-source="spec/Markdown.md#L94">Depth of the cuneiform artifact</dd>
 </dl>
 </section>
-<section id="sec-JTF-as-linked-data-JTF-LD" secid="2.4">
-<h2 data-source="spec/Markdown.md#L97"><span class="spec-secid" title="link to this section"><a href="#sec-JTF-as-linked-data-JTF-LD">2.4</a></span>JTF as linked data: JTF-LD</h2>
-<p data-source="spec/Markdown.md#L99-L100">Spec Markdown is first and foremost <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>. More specifically, it&rsquo;s based on <a href="https://help.github.com/articles/github-flavored-markdown/">Github-flavored Markdown</a>.</p>
-<p data-source="spec/Markdown.md#L102-L103">This section explains the syntax and capabilities of Markdown that Spec Markdown supports and augments.</p>
+<section id="sec-Text-Content" secid="2.4">
+<h2 data-source="spec/Markdown.md#L96"><span class="spec-secid" title="link to this section"><a href="#sec-Text-Content">2.4</a></span>Text Content</h2>
+<p data-source="spec/Markdown.md#L98-L100">JTF-LD is able to express textual contents present on surfaces of cuneiform tablets. A text content always belongs to a To express textual contents, the following definitions apply:</p>
+<dl>
+<dt data-source="spec/Markdown.md#L102-L105"><dfn id="line"><a href="#line" data-name="line">Line</a></dfn></dt>
+<dd data-source="spec/Markdown.md#L103-L105">A line in a text block on a surface of a cuneiform tablet A line usually occurs within a given surface. Hence, a surface may contain an arbitrary amount of lines. Lines are ordered by their occurrence on the surface, usually from top to bottom.</dd>
+</dl>
+<dl>
+<dt data-source="spec/Markdown.md#L107-L109"><dfn id="word"><a href="#word" data-name="word">Word</a></dfn></dt>
+<dd data-source="spec/Markdown.md#L108-L109">A word consists of a list of characters which have been identified as a semantic entity A line consists of several words in the order of their writing, usually from left to right.</dd>
+</dl>
+<dl>
+<dt data-source="spec/Markdown.md#L111-L112"><dfn id="character"><a href="#character" data-name="character">Character</a></dfn></dt>
+<dd data-source="spec/Markdown.md#L112">A character forms the basic means of writing cuneiform texts</dd>
+</dl>
+<dl>
+<dt data-source="spec/Markdown.md#L114-L115"><dfn id="characterpaleography"><a href="#characterpaleography" data-name="characterpaleography">CharacterPaleography</a></dfn></dt>
+<dd data-source="spec/Markdown.md#L115">The paleographic description of a cuneiform character used on a cuneiform artifact</dd>
+</dl>
 </section>
-<section id="sec-Character-Encoding" secid="2.5">
-<h2 data-source="spec/Markdown.md#L106"><span class="spec-secid" title="link to this section"><a href="#sec-Character-Encoding">2.5</a></span>Character Encoding</h2>
-<p data-source="spec/Markdown.md#L108-L109">Markdown allows you to write text which uses &amp;, &lt;, and &gt;. The output HTML will automatically use the <code>&amp;amp;</code>, <code>&amp;lt;</code>, and <code>&amp;gt;</code> entities.</p>
-<p data-source="spec/Markdown.md#L111-L112">Well formed HTML entities can be written inline directly. If you write <code>&amp;copy;</code>, it will appear in the HTML output as &copy;.</p>
-<section id="sec-Escape-sequence" secid="2.5.1">
-<h3 data-source="spec/Markdown.md#L115"><span class="spec-secid" title="link to this section"><a href="#sec-Escape-sequence">2.5.1</a></span>Escape sequence</h3>
-<p data-source="spec/Markdown.md#L117-L118">Markdown makes use of certain characters to format text, in order to render one explicitly, place a backslash before it.</p>
-<p data-source="spec/Markdown.md#L120-L121">You can type *literal asterisks* instead of emphasis by typing <code>\*literal asterisks\*</code>.</p>
-<p data-source="spec/Markdown.md#L123">Escaping does not apply within code.</p>
-<p data-source="spec/Markdown.md#L125">Spec Markdown allows backslash escapes for any ASCII punctuation character.</p>
-<pre data-source="spec/Markdown.md#L127-L129"><code>\!\"\#\$\%\&amp;\'\(\)\*\+\,\-\.\/\:\;\&lt;\=\&gt;\?\@\[\\\]\^\_\`\{\|\}\~
-</code></pre>
-<p data-source="spec/Markdown.md#L131">Produces the following:</p>
-<p data-source="spec/Markdown.md#L133">!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~</p>
+<section id="sec-Annotations" secid="2.5">
+<h2 data-source="spec/Markdown.md#L117"><span class="spec-secid" title="link to this section"><a href="#sec-Annotations">2.5</a></span>Annotations</h2>
 </section>
-</section>
-<section id="sec-Inline-formatting" secid="2.6">
-<h2 data-source="spec/Markdown.md#L135"><span class="spec-secid" title="link to this section"><a href="#sec-Inline-formatting">2.6</a></span>Inline formatting</h2>
-<p data-source="spec/Markdown.md#L137-L138">Markdown allows for inline stylistic and structual formatting. Inline formatting is allowed in paragraphs, list items, and table cells.</p>
-<section id="sec-Inline-HTML" secid="2.6.1">
-<h3 data-source="spec/Markdown.md#L141"><span class="spec-secid" title="link to this section"><a href="#sec-Inline-HTML">2.6.1</a></span>Inline HTML</h3>
-<p data-source="spec/Markdown.md#L143-L144">Markdown is not a replacement for HTML and instead leverages HTML by allowing its use inline within paragraphs, links, etc.</p>
-<p data-source="spec/Markdown.md#L146">This code has <blink>blinking</blink> and <em>emphasized</em> formatting.</p>
-<p data-source="spec/Markdown.md#L148">Markdown syntax can continue to be <u>used <em>within</em> inline HTML</u>.</p>
-</section>
-<section id="sec-Links" secid="2.6.2">
-<h3 data-source="spec/Markdown.md#L151"><span class="spec-secid" title="link to this section"><a href="#sec-Links">2.6.2</a></span>Links</h3>
-<p data-source="spec/Markdown.md#L153-L154">Use <code>[ ]</code> square brackets to indicate linked text followed immediately by <code>( )</code> parenthesis to describe the URL the text will link to.</p>
-<p data-source="spec/Markdown.md#L156">The linked text can contain any other inline formatting.</p>
-<pre data-source="spec/Markdown.md#L158-L160"><code>This is an [--&gt;*example*&lt;--](https://www.facebook.com) of a link.
-</code></pre>
-<p data-source="spec/Markdown.md#L162">Produces the following:</p>
-<p data-source="spec/Markdown.md#L164">This is an <a href="https://www.facebook.com">&rarr;<em>example</em>&larr;</a> of a link.</p>
-<div class="spec-todo" data-source="spec/Markdown.md#L167">
-Links do not yet support a reference style short-form.</div>
-</section>
-<section id="sec-Emphasis" secid="2.6.3">
-<h3 data-source="spec/Markdown.md#L170"><span class="spec-secid" title="link to this section"><a href="#sec-Emphasis">2.6.3</a></span>Emphasis</h3>
-<p data-source="spec/Markdown.md#L172">Wrapping asterisks <em>(*)</em> indicate emphasis.</p>
-<pre data-source="spec/Markdown.md#L174-L176"><code>Example of **bold** and *italic* and ***bold italic***.
-</code></pre>
-<p data-source="spec/Markdown.md#L178">Produces the following:</p>
-<p data-source="spec/Markdown.md#L180">Example of <strong>bold</strong> and <em>italic</em> and <strong><em>bold italic</em></strong>.</p>
-<p data-source="spec/Markdown.md#L182">Alternatively, use underscore <em>(_)</em> for italic emphasis.</p>
-<pre data-source="spec/Markdown.md#L184-L186"><code>Example of _italic_ and **_bold italic_** or _**bold italic**_.
-</code></pre>
-<p data-source="spec/Markdown.md#L188">Produces the following:</p>
-<p data-source="spec/Markdown.md#L190">Example of <em>italic</em> and <strong><em>bold italic</em></strong> or <em><strong>bold italic</strong></em>.</p>
-</section>
-<section id="sec-Inline-Code" secid="2.6.4">
-<h3 data-source="spec/Markdown.md#L193"><span class="spec-secid" title="link to this section"><a href="#sec-Inline-Code">2.6.4</a></span>Inline Code</h3>
-<p data-source="spec/Markdown.md#L195-L197">Wrapping back-ticks <em>(`)</em> indicate inline code, text inside back-ticks is not formatted, allowing for special characters to be used in inline code without escapes.</p>
-<pre data-source="spec/Markdown.md#L199-L201"><code>This is an `example` of some inline code.
-</code></pre>
-<p data-source="spec/Markdown.md#L203">Produces</p>
-<p data-source="spec/Markdown.md#L205">This is an <code>example</code> of some inline code.</p>
-<p data-source="spec/Markdown.md#L208">Inline code can also use double- or triple-backticks. Wrapping spaces are removed.</p>
-<p data-source="spec/Markdown.md#L210"><code>`` ` ``</code> Produces <code>`</code></p>
-</section>
-<section id="sec-Images" secid="2.6.5">
-<h3 data-source="spec/Markdown.md#L213"><span class="spec-secid" title="link to this section"><a href="#sec-Images">2.6.5</a></span>Images</h3>
-<pre data-source="spec/Markdown.md#L215-L217"><code>![Specs](http://i.imgur.com/aV8o3rE.png)
-</code></pre>
-<p data-source="spec/Markdown.md#L219">Produces the following:</p>
-<p data-source="spec/Markdown.md#L221"><img src="http://i.imgur.com/aV8o3rE.png" alt="Specs"/></p>
-</section>
-</section>
-<section id="sec-Blocks" secid="2.7">
-<h2 data-source="spec/Markdown.md#L224"><span class="spec-secid" title="link to this section"><a href="#sec-Blocks">2.7</a></span>Blocks</h2>
-<p data-source="spec/Markdown.md#L226-L228">Markdown allows for block-level structual formatting. Every block is seperated by at least two new lines. Spec Markdown makes use of Markdown&rsquo;s blocks to produce more specific structural formatting.</p>
-<section id="sec-Block-HTML" secid="2.7.1">
-<h3 data-source="spec/Markdown.md#L231"><span class="spec-secid" title="link to this section"><a href="#sec-Block-HTML">2.7.1</a></span>Block HTML</h3>
-<p data-source="spec/Markdown.md#L233-L235">Markdown is not a replacement for HTML and instead leverages HTML by allowing its use as complete blocks when separated from surrounding content by blank lines.</p>
-<div id="note-5b9d8" class="spec-note" data-source="spec/Markdown.md#L237">
-<a href="#note-5b9d8">Note</a>
-Markdown formatting syntax is not processed within block-level HTML tags.</div>
-<p data-source="spec/Markdown.md#L239">For example, to add an HTML table to a Markdown article:</p>
-<pre data-source="spec/Markdown.md#L241-L258"><code>Unrelated previous paragraph followed by a blank line
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;Table cell&lt;/td&gt;
-&lt;td&gt;
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;*Tables in tables*&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-</code></pre>
-<p data-source="spec/Markdown.md#L260">Produces the following:</p>
-<p data-source="spec/Markdown.md#L262">Unrelated previous paragraph followed by a blank line</p>
-<table>
-<tr>
-<td>Table cell</td>
-<td>
-
-<table>
-<tr>
-  <td>*Tables in tables*</td>
-</tr>
-</table>
-
-</td>
-</tr>
-</table><p data-source="spec/Markdown.md#L279">And using <code>&lt;pre&gt;</code> produces a simple code block:</p>
-<pre data-source="spec/Markdown.md#L281-L295"><code>&lt;pre&gt;
-Buffalo Bill ’s
-defunct
-       who used to
-       ride a watersmooth-silver
-                                stallion
-and break onetwothreefourfive pigeonsjustlikethat
-                                                 Jesus
-he was a handsome man
-                     and what i want to know is
-how do you like your blueeyed boy
-Mister Death
-&lt;/pre&gt;
-</code></pre>
-<p data-source="spec/Markdown.md#L297">Produces the following:</p>
-<pre>
-Buffalo Bill ’s
-defunct
-       who used to
-       ride a watersmooth-silver
-                                stallion
-and break onetwothreefourfive pigeonsjustlikethat
-                                                 Jesus
-he was a handsome man
-                     and what i want to know is
-how do you like your blueeyed boy
-Mister Death
-</pre></section>
-<section id="sec-Blocks.Section-Headers" secid="2.7.2">
-<h3 data-source="spec/Markdown.md#L314"><span class="spec-secid" title="link to this section"><a href="#sec-Blocks.Section-Headers">2.7.2</a></span>Section Headers</h3>
-<p data-source="spec/Markdown.md#L316-L317">Regular Markdown supports two styles of headers, Setext and atx, however Spec Markdown generally only supports atx style headers.</p>
-<pre id="example-d82de" class="spec-example" data-source="spec/Markdown.md#L319-L321"><a href="#example-d82de">Example № 1</a><code># Header
-</code></pre>
-<p data-source="spec/Markdown.md#L323">Setext headers are not supported by Spec Markdown.</p>
-<pre id="example-7c917" class="spec-counter-example" data-source="spec/Markdown.md#L325-L328"><a href="#example-7c917">Counter Example № 2</a><code>Header
-------
-</code></pre>
-<p data-source="spec/Markdown.md#L330-L332">The number of <code>#</code> characters refers to the depth of the section. To produce an, <code>&lt;h3&gt;</code>, type <code>###</code>. Optionally, a header may be &ldquo;closed&rdquo; by any number of <code>#</code> characters.</p>
-<div id="note-e6510" class="spec-note" data-source="spec/Markdown.md#L334">
-<a href="#note-e6510">Note</a>
-Spec Markdown requires that documents start with a header.</div>
-</section>
-<section id="sec-Paragraphs" secid="2.7.3">
-<h3 data-source="spec/Markdown.md#L337"><span class="spec-secid" title="link to this section"><a href="#sec-Paragraphs">2.7.3</a></span>Paragraphs</h3>
-<p data-source="spec/Markdown.md#L339-L340">Paragraphs are the most simple Markdown blocks. Lines are appended together to form a single &lt;p&gt; tag. Any inline syntax is allowed within a paragraph.</p>
-</section>
-<section id="sec-Lists" secid="2.7.4">
-<h3 data-source="spec/Markdown.md#L343"><span class="spec-secid" title="link to this section"><a href="#sec-Lists">2.7.4</a></span>Lists</h3>
-<p data-source="spec/Markdown.md#L345-L346">Markdown lists are lines which each start with either a ordered bullet <code>1.</code> or unordered bullet, <code>*</code>, <code>-</code>, or <code>+</code>. Lists are optionally indented by two spaces.</p>
-<p data-source="spec/Markdown.md#L348">Lists can be nested within other lists by indenting by at least two spaces.</p>
-<pre id="example-4d8ec" class="spec-example" data-source="spec/Markdown.md#L350-L356"><a href="#example-4d8ec">Example № 3</a><code>  1. this
-  2. is
-  3. a
-    - nested
-  4. list
-</code></pre>
-<p data-source="spec/Markdown.md#L358">Produces the following:</p>
-<ol>
-<li data-source="spec/Markdown.md#L360">this</li>
-<li data-source="spec/Markdown.md#L361">is</li>
-<li data-source="spec/Markdown.md#L362-L363">a<ul>
-<li data-source="spec/Markdown.md#L363">nested</li>
-</ul>
-</li>
-<li data-source="spec/Markdown.md#L364">list</li>
-</ol>
-<section id="sec-Task-Lists" secid="2.7.4.1">
-<h4 data-source="spec/Markdown.md#L366"><span class="spec-secid" title="link to this section"><a href="#sec-Task-Lists">2.7.4.1</a></span>Task Lists</h4>
-<p data-source="spec/Markdown.md#L368-L370">Spec Markdown also supports task lists. Start a list item with <code>[ ]</code> or <code>[x]</code> to render a checkbox. This can be useful for keeping your tasks inline with in-progress draft specifications.</p>
-<pre id="example-f34a9" class="spec-example" data-source="spec/Markdown.md#L372-L378"><a href="#example-f34a9">Example № 4</a><code>  1. this
-  2. [ ] is
-  3. [x] a
-    - [X] nested
-  4. todo list
-</code></pre>
-<p data-source="spec/Markdown.md#L380">Produces the following:</p>
-<ol>
-<li data-source="spec/Markdown.md#L382">this</li>
-<li class="task" data-source="spec/Markdown.md#L383">
-<input type="checkbox" disabled>is</li>
-<li class="task" data-source="spec/Markdown.md#L384-L385">
-<input type="checkbox" disabled checked>a<ul>
-<li class="task" data-source="spec/Markdown.md#L385">
-<input type="checkbox" disabled checked>nested</li>
-</ul>
-</li>
-<li data-source="spec/Markdown.md#L386">todo list</li>
-</ol>
-</section>
-</section>
-<section id="sec-Code-Block" secid="2.7.5">
-<h3 data-source="spec/Markdown.md#L389"><span class="spec-secid" title="link to this section"><a href="#sec-Code-Block">2.7.5</a></span>Code Block</h3>
-<p data-source="spec/Markdown.md#L391-L392">A block of code is formed by either indenting by 4 spaces, or wrapping with <code>```</code> on their own lines.</p>
-<pre data-source="spec/Markdown.md#L394-L396"><code>```
-const code = sample();
-```</code></pre>
-<p data-source="spec/Markdown.md#L398">Produces the following:</p>
-<pre data-source="spec/Markdown.md#L400-L402"><code>const code = sample();
-</code></pre>
-</section>
-<section id="sec-Block-Quotes" secid="2.7.6">
-<h3 data-source="spec/Markdown.md#L405"><span class="spec-secid" title="link to this section"><a href="#sec-Block-Quotes">2.7.6</a></span>Block Quotes</h3>
-<p data-source="spec/Markdown.md#L407">Spec markdown does not yet support Markdown&rsquo;s <code>&gt;</code> style block quotes.</p>
-</section>
-<section id="sec-Horizontal-Rules" secid="2.7.7">
-<h3 data-source="spec/Markdown.md#L410"><span class="spec-secid" title="link to this section"><a href="#sec-Horizontal-Rules">2.7.7</a></span>Horizontal Rules</h3>
-<p data-source="spec/Markdown.md#L412">Spec Markdown does not yet support Markdown&rsquo;s <code>---</code> style &lt;hr&gt;.</p>
-</section>
-<section id="sec-Automatic-Links" secid="2.7.8">
-<h3 data-source="spec/Markdown.md#L415"><span class="spec-secid" title="link to this section"><a href="#sec-Automatic-Links">2.7.8</a></span>Automatic Links</h3>
-<p data-source="spec/Markdown.md#L417-L418">Spec Markdown does not yet automatically link urls. </p>
+<section id="sec-JTF-as-linked-data-JTF-LD" secid="2.6">
+<h2 data-source="spec/Markdown.md#L120"><span class="spec-secid" title="link to this section"><a href="#sec-JTF-as-linked-data-JTF-LD">2.6</a></span>JTF as linked data: JTF-LD</h2>
+<section id="sec-Automatic-Links" secid="2.6.1">
+<h3 data-source="spec/Markdown.md#L130"><span class="spec-secid" title="link to this section"><a href="#sec-Automatic-Links">2.6.1</a></span>Automatic Links</h3>
+<p data-source="spec/Markdown.md#L132-L133">Spec Markdown does not yet automatically link urls. </p>
 </section>
 </section>
 </section>
@@ -519,13 +300,13 @@ For backwards-compatibility, a setext style header can be used for a document ti
 <section id="sec-Sections" secid="3.3">
 <h2 data-source="spec/Spec%20Additions.md#L44"><span class="spec-secid" title="link to this section"><a href="#sec-Sections">3.3</a></span>Sections</h2>
 <p data-source="spec/Spec%20Additions.md#L46-L50">A Spec Markdown document is separated into a sequence and hierarchy of sections. Those sections can then be used as navigation points and can be used to create a table of contents. A section is started by a header and ends at either the next header of similar or greater precedence or the end of the document. A section can contain other sections if their headers are of lower precedence.</p>
-<section id="sec-Sections.Section-Headers" secid="3.3.1">
-<h3 data-source="spec/Spec%20Additions.md#L53"><span class="spec-secid" title="link to this section"><a href="#sec-Sections.Section-Headers">3.3.1</a></span>Section Headers</h3>
+<section id="sec-Section-Headers" secid="3.3.1">
+<h3 data-source="spec/Spec%20Additions.md#L53"><span class="spec-secid" title="link to this section"><a href="#sec-Section-Headers">3.3.1</a></span>Section Headers</h3>
 <p data-source="spec/Spec%20Additions.md#L55-L56">Regular Markdown supports two styles of headers, Setext and atx, however Spec Markdown only supports atx style headers as section headers.</p>
 <pre data-source="spec/Spec%20Additions.md#L58-L60"><code># Header
 </code></pre>
 <p data-source="spec/Spec%20Additions.md#L62">Only use Setext style headers for the title of the document.</p>
-<pre id="example-f87c5" class="spec-counter-example" data-source="spec/Spec%20Additions.md#L64-L67"><a href="#example-f87c5">Counter Example № 5</a><code>Header
+<pre id="example-7c917" class="spec-counter-example" data-source="spec/Spec%20Additions.md#L64-L67"><a href="#example-7c917">Counter Example № 1</a><code>Header
 ------
 </code></pre>
 </section>
@@ -700,14 +481,14 @@ const baz = foo("bar");
 const great = useOf.example("code");
 ```</code></pre>
 <p data-source="spec/Spec%20Additions.md#L307">Produces the following:</p>
-<pre id="example-33270" class="spec-example" data-source="spec/Spec%20Additions.md#L309-L311"><a href="#example-33270">Example № 6</a><code>const great = useOf.example("code");
+<pre id="example-33270" class="spec-example" data-source="spec/Spec%20Additions.md#L309-L311"><a href="#example-33270">Example № 2</a><code>const great = useOf.example("code");
 </code></pre>
 <p data-source="spec/Spec%20Additions.md#L313-L314">Examples can also be syntax highlighted, by placing the language directly before writing <code>example</code>:</p>
 <pre data-source="spec/Spec%20Additions.md#L316-L318"><code>```js example
 const great = useOf.example("code");
 ```</code></pre>
 <p data-source="spec/Spec%20Additions.md#L320">Produces the following:</p>
-<pre id="example-d7c75" class="spec-example" data-language="js" data-source="spec/Spec%20Additions.md#L322-L324"><a href="#example-d7c75">Example № 7</a><code><span class="token keyword">const</span> great <span class="token operator">=</span> useOf<span class="token punctuation">.</span><span class="token method function property-access">example</span><span class="token punctuation">(</span><span class="token string">"code"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre id="example-d7c75" class="spec-example" data-language="js" data-source="spec/Spec%20Additions.md#L322-L324"><a href="#example-d7c75">Example № 3</a><code><span class="token keyword">const</span> great <span class="token operator">=</span> useOf<span class="token punctuation">.</span><span class="token method function property-access">example</span><span class="token punctuation">(</span><span class="token string">"code"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 </section>
 <section id="sec-Counter-Examples" secid="3.9.2">
@@ -717,7 +498,7 @@ const great = useOf.example("code");
 const shit = dontSwear();
 ```</code></pre>
 <p data-source="spec/Spec%20Additions.md#L337">Produces the following:</p>
-<pre id="example-4c929" class="spec-counter-example" data-language="js" data-source="spec/Spec%20Additions.md#L339-L341"><a href="#example-4c929">Counter Example № 8</a><code><span class="token keyword">const</span> shit <span class="token operator">=</span> <span class="token function">dontSwear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre id="example-4c929" class="spec-counter-example" data-language="js" data-source="spec/Spec%20Additions.md#L339-L341"><a href="#example-4c929">Counter Example № 4</a><code><span class="token keyword">const</span> shit <span class="token operator">=</span> <span class="token function">dontSwear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 </section>
 </section>
@@ -1024,7 +805,7 @@ TypeThree ::: `type` `three`
 <div class="spec-rhs"><span class="spec-quantified"><span class="spec-t">|</span><span class="spec-quantifiers"><span class="spec-quantifier optional">opt</span></span></span><span class="spec-nt"><span data-name="NamedType">NamedType</span></span></div>
 </div>
 <p data-source="spec/Spec%20Additions.md#L749-L750">However, unquoted non-terminals may use the <code>*</code>, <code>?</code> and <code>+</code> characters, so always quote the terminal if the intent is to apply a quantifer.</p>
-<pre id="example-10052" class="spec-counter-example" data-language="markdown" data-source="spec/Spec%20Additions.md#L752-L756"><a href="#example-10052">Counter Example № 9</a><code>UnionMembers :
+<pre id="example-10052" class="spec-counter-example" data-language="markdown" data-source="spec/Spec%20Additions.md#L752-L756"><a href="#example-10052">Counter Example № 5</a><code>UnionMembers :
   <span class="token list punctuation">-</span> UnionMembers | NamedType
   <span class="token list punctuation">-</span> |? NamedType
 </code></pre>
@@ -1383,6 +1164,8 @@ nodemon --exec "spec-md &gt; ./path/to/output.html" ./path/to/markdown.md
 <li><a href="#BalancedParens">BalancedParens</a></li>
 <li><a href="#Book">Book</a></li>
 <li><a href="#bottom">Bottom</a></li>
+<li><a href="#character">Character</a></li>
+<li><a href="#characterpaleography">CharacterPaleography</a></li>
 <li><a href="#cookie">Cookie</a></li>
 <li><a href="#depth">Depth</a></li>
 <li><a href="#DivisionExpression">DivisionExpression</a></li>
@@ -1395,6 +1178,7 @@ nodemon --exec "spec-md &gt; ./path/to/output.html" ./path/to/markdown.md
 <li><a href="#height">Height</a></li>
 <li><a href="#Keyword">Keyword</a></li>
 <li><a href="#left">Left</a></li>
+<li><a href="#line">Line</a></li>
 <li><a href="#obverse">Obverse</a></li>
 <li><a href="#Page_list">Page_list</a></li>
 <li><a href="#PBJ">PBJ</a></li>
@@ -1413,6 +1197,7 @@ nodemon --exec "spec-md &gt; ./path/to/output.html" ./path/to/markdown.md
 <li><a href="#UppercaseWord">UppercaseWord</a></li>
 <li><a href="#WhileStatement">WhileStatement</a></li>
 <li><a href="#width">Width</a></li>
+<li><a href="#word">Word</a></li>
 </ol>
 </section>
 </article>
@@ -1452,39 +1237,12 @@ Written in <a href="https://spec-md.com" target="_blank">Spec Markdown</a>.</foo
 </ol>
 </li>
 <li id="_sidebar_2.3"><a href="#sec-Metadata"><span class="spec-secid">2.3</span>Metadata</a></li>
-<li id="_sidebar_2.4"><a href="#sec-JTF-as-linked-data-JTF-LD"><span class="spec-secid">2.4</span>JTF as linked data: JTF-LD</a></li>
-<li id="_sidebar_2.5"><a href="#sec-Character-Encoding"><span class="spec-secid">2.5</span>Character Encoding</a>
-<input hidden class="toggle" type="checkbox" id="_toggle_2.5" /><label for="_toggle_2.5"></label>
-<ol>
-<li id="_sidebar_2.5.1"><a href="#sec-Escape-sequence"><span class="spec-secid">2.5.1</span>Escape sequence</a></li>
-</ol>
-</li>
-<li id="_sidebar_2.6"><a href="#sec-Inline-formatting"><span class="spec-secid">2.6</span>Inline formatting</a>
+<li id="_sidebar_2.4"><a href="#sec-Text-Content"><span class="spec-secid">2.4</span>Text Content</a></li>
+<li id="_sidebar_2.5"><a href="#sec-Annotations"><span class="spec-secid">2.5</span>Annotations</a></li>
+<li id="_sidebar_2.6"><a href="#sec-JTF-as-linked-data-JTF-LD"><span class="spec-secid">2.6</span>JTF as linked data: JTF-LD</a>
 <input hidden class="toggle" type="checkbox" id="_toggle_2.6" /><label for="_toggle_2.6"></label>
 <ol>
-<li id="_sidebar_2.6.1"><a href="#sec-Inline-HTML"><span class="spec-secid">2.6.1</span>Inline HTML</a></li>
-<li id="_sidebar_2.6.2"><a href="#sec-Links"><span class="spec-secid">2.6.2</span>Links</a></li>
-<li id="_sidebar_2.6.3"><a href="#sec-Emphasis"><span class="spec-secid">2.6.3</span>Emphasis</a></li>
-<li id="_sidebar_2.6.4"><a href="#sec-Inline-Code"><span class="spec-secid">2.6.4</span>Inline Code</a></li>
-<li id="_sidebar_2.6.5"><a href="#sec-Images"><span class="spec-secid">2.6.5</span>Images</a></li>
-</ol>
-</li>
-<li id="_sidebar_2.7"><a href="#sec-Blocks"><span class="spec-secid">2.7</span>Blocks</a>
-<input hidden class="toggle" type="checkbox" id="_toggle_2.7" /><label for="_toggle_2.7"></label>
-<ol>
-<li id="_sidebar_2.7.1"><a href="#sec-Block-HTML"><span class="spec-secid">2.7.1</span>Block HTML</a></li>
-<li id="_sidebar_2.7.2"><a href="#sec-Blocks.Section-Headers"><span class="spec-secid">2.7.2</span>Section Headers</a></li>
-<li id="_sidebar_2.7.3"><a href="#sec-Paragraphs"><span class="spec-secid">2.7.3</span>Paragraphs</a></li>
-<li id="_sidebar_2.7.4"><a href="#sec-Lists"><span class="spec-secid">2.7.4</span>Lists</a>
-<input hidden class="toggle" type="checkbox" id="_toggle_2.7.4" /><label for="_toggle_2.7.4"></label>
-<ol>
-<li id="_sidebar_2.7.4.1"><a href="#sec-Task-Lists"><span class="spec-secid">2.7.4.1</span>Task Lists</a></li>
-</ol>
-</li>
-<li id="_sidebar_2.7.5"><a href="#sec-Code-Block"><span class="spec-secid">2.7.5</span>Code Block</a></li>
-<li id="_sidebar_2.7.6"><a href="#sec-Block-Quotes"><span class="spec-secid">2.7.6</span>Block Quotes</a></li>
-<li id="_sidebar_2.7.7"><a href="#sec-Horizontal-Rules"><span class="spec-secid">2.7.7</span>Horizontal Rules</a></li>
-<li id="_sidebar_2.7.8"><a href="#sec-Automatic-Links"><span class="spec-secid">2.7.8</span>Automatic Links</a></li>
+<li id="_sidebar_2.6.1"><a href="#sec-Automatic-Links"><span class="spec-secid">2.6.1</span>Automatic Links</a></li>
 </ol>
 </li>
 </ol>
@@ -1497,7 +1255,7 @@ Written in <a href="https://spec-md.com" target="_blank">Spec Markdown</a>.</foo
 <li id="_sidebar_3.3"><a href="#sec-Sections"><span class="spec-secid">3.3</span>Sections</a>
 <input hidden class="toggle" type="checkbox" id="_toggle_3.3" /><label for="_toggle_3.3"></label>
 <ol>
-<li id="_sidebar_3.3.1"><a href="#sec-Sections.Section-Headers"><span class="spec-secid">3.3.1</span>Section Headers</a></li>
+<li id="_sidebar_3.3.1"><a href="#sec-Section-Headers"><span class="spec-secid">3.3.1</span>Section Headers</a></li>
 <li id="_sidebar_3.3.2"><a href="#sec-Subsection-Headers"><span class="spec-secid">3.3.2</span>Subsection Headers</a></li>
 <li id="_sidebar_3.3.3"><a href="#sec-Table-of-Contents"><span class="spec-secid">3.3.3</span>Table of Contents</a></li>
 <li id="_sidebar_3.3.4"><a href="#sec-Section-Numbers"><span class="spec-secid">3.3.4</span>Section Numbers</a>
