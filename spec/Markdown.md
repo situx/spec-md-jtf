@@ -63,34 +63,34 @@ This specification assumes that an agreement to classify surfaces on the cuneifo
 In particular, this involves researchers' agreement concerning the orientation of the cuneiform tablet and, hence, the identification of its different surfaces.
 Therefore, the following definitions of surfaces are the results of scholarly work and may be applied to areas on the cuneiform tablet:
 
-Top
+**Top**
 : One or many surfaces located at the top of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
 
-Bottom
+**Bottom**
 : One or many surfaces located at the bottom of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
 
-Left
+**Left**
 : One or many surfaces located on the left side of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
 
-Right
+**Right**
 : One or many surfaces located on the right side of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
 
-Obverse
+**Obverse**
 : One or many surfaces located on the obverse or front side of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
 
-Reverse
+**Reverse**
 : One or many surfaces located on the obverse or back side of a cuneiform artifact as defined by one or many scholars interpreting the contents of the artifact
 
 ## Metadata
 Metadata associated with cuneiform artifacts may include:
 
-Width
+**Width**
 : Width of the cuneiform artifact
 
-Height
+**Height**
 : Height of the cuneiform artifact
 
-Depth
+**Depth**
 : Depth of the cuneiform artifact
 
 ## Text Content
@@ -99,19 +99,19 @@ JTF-LD is able to express textual contents present on surfaces of cuneiform tabl
 A text content always belongs to a 
 To express textual contents, the following definitions apply:
 
-Line
+**Line**
 : A line in a text block on a surface of a cuneiform tablet
 A line usually occurs within a given surface. Hence, a surface may contain an arbitrary amount of lines.
 Lines are ordered by their occurrence on the surface, usually from top to bottom.
 
-Word
+**Word**
 : A word consists of a list of characters which have been identified as a semantic entity
 A line consists of several words in the order of their writing, usually from left to right.
 
-Character
+**Character**
 : A character forms the basic means of writing cuneiform texts
 
-CharacterPaleography
+**CharacterPaleography**
 : The paleographic description of a cuneiform character used on a cuneiform artifact
 
 ## Annotations
